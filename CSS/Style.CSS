@@ -2,45 +2,54 @@
     margin: 0;
     padding: 0;
 }
-body {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
-
-.Barra {
-    background-color: #008C72;
-    border-radius: 5px;
-    display: inline-block;
-    justify-items: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100px;
-    position: sticky;
-    font-size: 25px;
-    text-align: center;
+Body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #E5EDD5;
+    display: grid;
+    grid-template-areas: 
+    "Nav Nav Nav"
+    "Cartas Cartas Cartas"
+    "Cartas Cartas Cartas"
+    "Info Info Info"
+    "CartaS CartaS CartaS"
+    "Redes Redes Redes"
+    "MP MP MP"
+    "BarraAbajo BarraAbajo BarraAbajo "
+    "Copi Copi Copi";
+}
+
+.Barra { 
+    background-color: #7A7A6D;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    height: 100px;
+    justify-content: space-around;
+    font-size: 25px;
+    border-radius: 8px;
+    grid-area: Nav;
+}
+
+.Barra  li{
+    list-style:none;
+    display: inline-block;
+    margin-right: 20px;
+    color: #C7B1B1;
+    
+}
+
+a { 
+  text-decoration: none;  
+  color: #C7B1B1;
 }
 
 .Barra h1 {
-    position: absolute;
-    top: 30px;
-    left: 50px;
-    font-size: 40px;
-    color: whitesmoke;
-    font-weight: bold;
-    cursor: pointer;
+    font-size: 60px;
 }
-
-.Barra li{
-    display: inline-block;
-    text-decoration: none;
-    padding: 0px 10px;
-    position: relative;
-    top: 35px;
+.Fotos{
+    grid-area: Cartas;
 }
-a{
-    text-decoration: none;
-    color: whitesmoke
-
-}
-
 .Contenedor {
     width: 100%;
     max-width: 1200px;
@@ -49,6 +58,8 @@ a{
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
+    
+
 }
 
 .Contenedor .Carta {
@@ -60,6 +71,7 @@ a{
     margin: 20px;
     text-align: center;
     transition: all 0.25s;
+    cursor: pointer;
 }
 
 .Contenedor .Carta:hover {
@@ -81,102 +93,134 @@ a{
     font-size: 16px;
     font-weight: 300;
 }
-
-.Info {
-    background-color: #008C72;
-    text-align: center;
-    color: whitesmoke;
-    width: 100%;
-    height: 400px;
-    margin-top: 50px;
-    border-radius: 5px;
-    display: inline-block;
+.Fotos2{
+    grid-area: CartaS;
 }
-
-.Info h2 {
-    font-weight: 600;
-    margin: 50px;}
-
-.Info h3{
+.Contenedor2 {
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: auto;
-    padding: 20px
-    ;
 }
 
-.Redes {
-    width: 100%;
-    height: 100px;
-    background-color: #008C72;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 0px 10px;
-    border-radius: 5px;
-    position: relative;
+.Contenedor2 .Carta {
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    overflow: hidden;
+    margin: 20px;
     text-align: center;
-    justify-content: space-between;
-    align-items: center;
+    transition: all 0.25s;
+    cursor: pointer;
+}
 
+.Contenedor2 .Carta:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
 }
-.Redes li{
-    display: inline-block;
-    text-decoration: none;
+
+.Contenedor2 .Carta img {
+    width: 330px;
+    height: 220px;
+}
+
+.Contenedor2 .Carta h4 {
+    font-weight: 600;
+}
+
+.Contenedor2 .Carta p {
     padding: 0px 10px;
-    position: relative;
-    top: 35px;
-    background-color: #003840;
-    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 300;
 }
+
+.Info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #C7B1B1;
+    grid-area: Info;
+}
+.Info div{
+    background-color: #7A7A6D;
+    border-radius: 8px;
+    width: 90%;
+    height: 40vh;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+.Info h2{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.Redes{
+    grid-area: Redes;
+}
+.Redes1{
+    background-color: #7A7A6D;
+    border-radius: 8px;
+    width:90%;
+    height: 4vh;
+    margin: 40px;
+    padding: 30px;
+}
+
+.Redes ul{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 4vh;
+}
+
 .MP {
     text-align: center;
-    justify-content: center;
+    height: 2vh;
+    margin-bottom: 40px;
+    padding: 20px;
+    font-weight: bold;
+    grid-area: MP;
+}
+
+.BarraAbajo { 
+    background-color: #7A7A6D;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
     align-items: center;
-    margin: 50px 50px 50px 50px;
-}
-.Copi {text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-.Prod {
-    margin: 50px 50px;
-}
-.Titulos {
     height: 100px;
-    width: 100%;
-    padding: 0px 10px;
-    position: relative;
-    text-align: center;
-    top: 25px;
-    background-color: #008C72;
-    color: whitesmoke;
-    border-radius: 5px;
-}
-.Titulos h2 {
-    display: inline-block;
-    margin-top: 30px;
+    justify-content: space-around;
+    font-size: 25px;
+    border-radius: 8px;
+    grid-area: BarraAbajo;
 }
 
-.Mapa{
+.BarraAbajo  li{
+    list-style:none;
     display: inline-block;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: auto;
-    width: 100%;
-    text-align: center;
-    font-weight: 600;
-}
-.Mapa iframe{
-    display: inline-block;
-    margin-top: 80px;
-    position: relative;
-
+    margin-right: 20px;
+    color: #C7B1B1;
 }
 
-form {
-    width: 100%;
-    height: 50%;
-    margin-top: 50px;
+.Copi {
     text-align: center;
-    background-color: #005A5B;
-    color: whitesmoke;
+    height: 2vh;
+    margin-bottom: 40px;
+    padding: 20px;
+    font-weight: bold;
+    grid-area: Copi;
+}
+.Copi p{
+    margin: 5px;
 }
