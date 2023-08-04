@@ -21,6 +21,16 @@ body {
     "Copi Copi Copi";
 }
 .BodyP{
+    grid-template-areas: 
+    "Nav Nav Nav"
+    "Titulos Titulos Titulos"
+    "Cartas Cartas Cartas"
+    "CartaS CartaS CartaS"
+    "Redes Redes Redes"
+    "MP MP MP"
+    "BarraAbajo BarraAbajo BarraAbajo"
+    "Copi Copi Copi";
+
 
 }
 
@@ -243,4 +253,5 @@ a {
     align-items: center;
     justify-content: center;
     font-size: 4vh;
+    grid-area: Titulos;
 }
