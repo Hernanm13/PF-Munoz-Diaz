@@ -43,7 +43,9 @@ body {
     "BarraAbajo BarraAbajo BarraAbajo"
     "Copi Copi Copi";
 }
-
+.LogoContenedor{
+    display: none;
+}
 
 .Barra { 
     background-color: #7A7A6D;
@@ -360,9 +362,57 @@ a {
     }
 
     @media screen and (max-width:600px){
-       
+        .Body{
+            grid-template-areas: 
+            "Nav Nav Nav"
+            "Logo Logo Logo"
+            "Info Info Info"
+            "CartaS CartaS CartaS"
+            "Redes Redes Redes"
+            "MP MP MP"
+            "BarraAbajo BarraAbajo BarraAbajo"
+            "Copi Copi Copi";
+        }
+        .Barra{
+            height: 200px;
+        }
 
+        .Fotos{ 
+            display: none;
+        }
 
+        .LogoContenedor {
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-area: Logo;
+            background-color: #7A7A6D;
+            padding: auto;
+            margin: 30px;
+            border-radius: 8px;
+        }
+
+        .Logo img{
+            border-radius: 8px;
+            width: 100%;
+        }
+     
+        .Info div{ 
+            height: 600px;
+        }
+        
+        .Fotos2 {
+            height: 900px;
+        }
+
+        .Redes{
+            align-self: center;
+        }
+    
+        .Redes1{
+            width: 75%; 
+        }
 
     }
 
