@@ -127,7 +127,7 @@ a {
     grid-area: CartaS;
     margin-top: 20px;
     margin-bottom: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr))
+    grid-template-columns: repeat(auto-fill, minmax(min(15rem, 25rem), 1fr))
 }
 .Contenedor2 {
     width: 100%;
@@ -335,7 +335,6 @@ a {
         margin-top: 15px;
     }
     .Fotos {
-        /*grid-template-columns: repeat(auto-fill, minmax(min(15rem, 25rem), 1fr));*/
         height: 900px;
     }
 
@@ -404,6 +403,9 @@ a {
         .Fotos2 {
             height: 900px;
         }
+        .Contenedor2 {
+            width: 600px;
+        }
 
         .Redes{
             align-self: center;
@@ -412,7 +414,6 @@ a {
         .Redes1{
             width: 75%; 
         }
-
     }
 
 
