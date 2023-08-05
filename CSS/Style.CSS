@@ -433,7 +433,9 @@ a {
         .Fotos{ 
             display: none;
         }
-
+        .Fotos2{
+            height: 900px;
+        }
         .LogoContenedor{
             height: 300px;
             display: flex;
