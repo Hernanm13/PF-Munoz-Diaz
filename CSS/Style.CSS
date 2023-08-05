@@ -43,9 +43,7 @@ body {
     "BarraAbajo BarraAbajo BarraAbajo"
     "Copi Copi Copi";
 }
-.LogoContenedor img{
-    display: none;
-}
+
 
 .Barra { 
     background-color: #7A7A6D;
@@ -316,9 +314,6 @@ a {
 }
 
 @media screen and (max-width: 1100px){
-    *{
-        border: solid #7A7A6D 2px;
-    }
     .Body{
         grid-template-areas: 
         "Nav Nav Nav"
@@ -349,7 +344,7 @@ a {
     }
 
     .Info div{
-        height: 300px;
+        height: 75vh;
     }
 
     .Redes{
@@ -360,6 +355,9 @@ a {
         width: 85%; 
     }
 
+    }
+    .LogoContenedor{
+        display: none;
     }
 
     @media screen and (max-width:760px){
@@ -382,7 +380,7 @@ a {
             display: none;
         }
 
-        .LogoContenedor {
+        .LogoContenedor{
             height: 300px;
             display: flex;
             align-items: center;
@@ -396,11 +394,11 @@ a {
 
         .Logo img{
             border-radius: 8px;
-            width: 100%;
+            width:100%;
         }
      
         .Info div{ 
-            height: 600px;
+            height: 90vh;
         }
         
         .Fotos2 {
