@@ -37,7 +37,7 @@ body {
     "Nav Nav Nav"
     "Titulos Titulos Titulos"
     "Mapa Mapa Mapa"
-    "Mapa Map Mapa"
+    "Mapa Mapa Mapa"
     "Redes Redes Redes"
     "MP MP MP"
     "BarraAbajo BarraAbajo BarraAbajo"
@@ -126,6 +126,7 @@ a {
     grid-area: CartaS;
     margin-top: 20px;
     margin-bottom: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr))
 }
 .Contenedor2 {
     width: 100%;
@@ -310,3 +311,59 @@ a {
     font-weight: bold;
     margin-bottom: 20px;
 }
+
+@media screen and (max-width: 1024px){
+    *{
+        border: solid #7A7A6D 2px;
+    }
+    .Body{
+        grid-template-areas: 
+        "Nav Nav Nav"
+        "Cartas Cartas Cartas"
+        "Info Info Info"
+        "CartaS CartaS CartaS"
+        "Redes Redes Redes"
+        "MP MP MP"
+        "BarraAbajo BarraAbajo BarraAbajo "
+        "Copi Copi Copi";
+        
+    }
+
+    .Barra { 
+        flex-direction: column-reverse;
+        height: 140px;
+    }
+    .Barra li{
+        margin-top: 15px;
+    }
+    .Fotos {
+        grid-template-columns: repeat(auto-fill, minmax(min(15rem, 25rem), 1fr));
+        height: 900px;
+    }
+
+    .Contenedor { 
+        max-width: 100%;
+    }
+
+    .Info div{
+        height: 300px;
+    }
+
+    .Redes{
+        align-self: center;
+    }
+
+    .Redes1{
+        width: 85%; 
+    }
+
+    }
+
+    @media screen and (max-width:600px){
+       
+
+
+
+    }
+
+
