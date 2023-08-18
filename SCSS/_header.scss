@@ -1,6 +1,7 @@
 @mixin anc {
     text-decoration: none;
     color: $cFuente;
+    transition: all 0.25s;
 }
 @mixin list {
     list-style: none;

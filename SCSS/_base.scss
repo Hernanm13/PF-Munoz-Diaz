@@ -2,11 +2,16 @@
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    .LogoContenedor{
+        display: none;
+    }
     
 }
 body{
     background-color: $cFondo;
+    
 }
+
 .Body{
     display: grid;
     grid-template-areas: 

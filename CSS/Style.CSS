@@ -77,6 +77,8 @@ a {
     font-size: 60px;
 }
 */
+
+/*
 .Fotos{
     grid-area: Cartas;
     margin-top: 20px;
@@ -221,7 +223,8 @@ a {
     font-size: 16px;
     font-weight: 300;
 }
-
+*/
+/*
 .Info{
     display: flex;
     justify-content: center;
@@ -246,6 +249,8 @@ a {
     font-weight: 600;
     margin-bottom: 20px;
 }
+*/
+/*
 .Redes{
     grid-area: Redes;
 }
@@ -307,8 +312,10 @@ a {
 }
 .Copi p{
     margin: 5px;
+    
 }
-
+*/
+/*
 .Titulos{
     background-color: #7A7A6D;
     border-radius: 8px;
@@ -363,7 +370,7 @@ a {
     font-weight: bold;
     margin-bottom: 20px;
 }
-
+*/
 @media screen and (max-width: 1100px){
     .Body{
         grid-template-areas: 
@@ -402,11 +409,11 @@ a {
         height: 75vh;
     }
 
-    .Redes{
+    .Footer{
         align-self: center;
     }
 
-    .Redes1{
+    .Redes{
         width: 85%;
     }
 
@@ -464,11 +471,11 @@ a {
             width: 600px;
         }
 
-        .Redes{
+        .Footer{
             align-self: center;
         }
     
-        .Redes1{
+        .Redes{
             width: 75%; 
         }
     }
