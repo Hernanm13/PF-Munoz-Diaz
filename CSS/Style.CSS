@@ -1,4 +1,4 @@
-* {
+/* {
     margin: 0;
     padding: 0;
 }
@@ -6,7 +6,8 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #E5EDD5;
 }
-
+*/
+/*
 .Body{
     display: grid;
     grid-template-areas: 
@@ -44,7 +45,8 @@ body {
     "Copi Copi Copi";
 }
 
-
+*/
+/*
 .Barra { 
     background-color: #7A7A6D;
     display: flex;
@@ -74,6 +76,7 @@ a {
 .Barra h1 {
     font-size: 60px;
 }
+*/
 .Fotos{
     grid-area: Cartas;
     margin-top: 20px;

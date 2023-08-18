@@ -1,0 +1,38 @@
+@mixin anc {
+    text-decoration: none;
+    color: $cFuente;
+}
+@mixin list {
+    list-style: none;
+    color: $cFuente;
+    font-size: 25px;
+    text-align: center;
+}
+
+.Barra {
+    background-color: $cFondoDos;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    border-radius: 8px;
+    grid-area: Nav;
+    @include list;
+    li{
+        @include anc;
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    a{
+        @include anc;
+        &:hover{
+            color: $cFuenteSec;
+        }
+    }
+    
+    h1{
+        font-size: 60px;
+    }
+}
