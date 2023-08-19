@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  border: solid 1px red;
 }
 * .LogoContenedor {
   display: none;
@@ -26,6 +25,18 @@ body {
 
 .BodyS {
   grid-template-areas: "Nav Nav Nav" "Titulos Titulos Titulos" "Mapa Mapa Mapa" "Mapa Mapa Mapa" "Redes Redes Redes" "MP MP MP" "BarraAbajo BarraAbajo BarraAbajo" "Copi Copi Copi";
+}
+
+.Btn {
+  background-color: #7A7A6D;
+  height: 6vh;
+  width: 20vh;
+  border-radius: 6px;
+  color: #C7B1B1;
+  transition: all 0.25s;
+}
+.Btn:hover {
+  background-color: #463426;
 }
 
 .Barra {
@@ -365,6 +376,7 @@ main {
 .Footer .BarraAbajo ul {
   display: flex;
   flex-wrap: wrap;
+  margin: 1vh;
 }
 .Footer .BarraAbajo ul li {
   margin: 1vh;

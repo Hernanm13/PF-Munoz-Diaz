@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border: solid 1px red;
     .LogoContenedor{
         display: none;
     }
@@ -51,4 +50,17 @@ body{
     "MP MP MP"
     "BarraAbajo BarraAbajo BarraAbajo"
     "Copi Copi Copi";
+}
+
+.Btn{
+    background-color: $cFondoDos;
+    height: 6vh;
+    width: 20vh;
+    border-radius: 6px;
+    color: $cFuente;
+    transition: all 0.25s;
+    &:hover{
+        background-color: $cFondoBtn;
+    }
+
 }
