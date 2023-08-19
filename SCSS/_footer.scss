@@ -32,19 +32,24 @@
         grid-area: MP;
     }
     .BarraAbajo { 
-        background-color: #7A7A6D;
+        background-color: $cFondoDos;
         display: flex;
         flex-direction: row;
-        text-align: center;
+        height: 15vh;
+        justify-content:center;
         align-items: center;
-        height: 100px;
-        justify-content: space-around;
         font-size: 1.6rem;
         border-radius: 8px;
         grid-area: BarraAbajo;
-        li{
-            margin-right: 20px;
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                margin: 1vh;
+                padding: auto;
+            }
         }
+        
     }
     .Copi {
         text-align: center;

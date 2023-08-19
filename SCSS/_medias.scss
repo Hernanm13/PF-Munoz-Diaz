@@ -55,7 +55,9 @@
             "BarraAbajo BarraAbajo BarraAbajo"
             "Copi Copi Copi";
         }
-       
+       main{
+        height: 160vh;
+       }
         .Fotos{ 
             display: none;
         }
@@ -79,18 +81,22 @@
             width:100%;
         }
      
-       .BarraAbajo{
-        flex-direction: column-reverse;
+       .BarraAbajo ul{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
         height: 26vh;
        }
-
         .Contenedor2 {
             width: 600px;
         }
 
-    
         .Redes{
             width: 75%; 
+        }
+        .Info2 div{
+            height: 110vh;
+            
         }
     }
 
@@ -99,8 +105,24 @@
             height: 1400px;
         }
     }
-    @media screen and (max-width:$mediaMobileMini){
-        .BarraAbajo{
-            font-size: 1rem;
+    
+    @media screen and (max-width:$media1000){
+        .Info div{
+            height: 90vh;
+        }
+        .BarraAbajo ul{
+            height: 20vh;
+            padding: auto;
         }
     }
+
+    @media screen and (max-width:$media580){
+        .Info2 div{
+            height: 160vh;
+        }
+        main{
+            height: 210vh;
+        }
+    }
+    
+    

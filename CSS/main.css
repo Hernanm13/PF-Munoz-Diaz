@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  border: solid 1px red;
 }
 * .LogoContenedor {
   display: none;
@@ -49,6 +48,7 @@ body {
   display: inline-block;
 }
 .Barra a {
+  margin: 1vh;
   text-decoration: none;
   color: #C7B1B1;
   transition: all 0.25s;
@@ -191,6 +191,11 @@ body {
   font-weight: 300;
 }
 
+main {
+  height: 135vh;
+  margin: 2vh;
+}
+
 .Info {
   display: flex;
   justify-content: center;
@@ -215,6 +220,30 @@ body {
   margin-bottom: 20px;
 }
 
+.Info2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #C7B1B1;
+  grid-area: Info;
+}
+.Info2 div {
+  background-color: #7A7A6D;
+  border-radius: 8px;
+  width: 90%;
+  height: 80vh;
+  margin: auto;
+  padding: 6vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Info2 h2 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
 .Titulos {
   background-color: #7A7A6D;
   border-radius: 8px;
@@ -222,9 +251,11 @@ body {
   height: 15vh;
   margin: auto;
   margin-top: 5vh;
+  margin-bottom: 5vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   font-size: 4vh;
   grid-area: Titulos;
   color: #C7B1B1;
@@ -237,14 +268,14 @@ body {
 .Mapa {
   background-color: #D4CFBE;
   width: 60%;
-  height: 500px;
+  height: 100vh;
   text-align: center;
   border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
-  margin-top: 30px;
+  padding: auto;
   grid-area: Mapa;
 }
 .Mapa iframe {
@@ -321,16 +352,20 @@ body {
   background-color: #7A7A6D;
   display: flex;
   flex-direction: row;
-  text-align: center;
+  height: 15vh;
+  justify-content: center;
   align-items: center;
-  height: 100px;
-  justify-content: space-around;
   font-size: 1.6rem;
   border-radius: 8px;
   grid-area: BarraAbajo;
 }
-.Footer .BarraAbajo li {
-  margin-right: 20px;
+.Footer .BarraAbajo ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.Footer .BarraAbajo ul li {
+  margin: 1vh;
+  padding: auto;
 }
 .Footer .Copi {
   text-align: center;
@@ -380,6 +415,9 @@ body {
   .Body {
     grid-template-areas: "Nav Nav Nav" "Logo Logo Logo" "Info Info Info" "CartaS CartaS CartaS" "Redes Redes Redes" "MP MP MP" "BarraAbajo BarraAbajo BarraAbajo" "Copi Copi Copi";
   }
+  main {
+    height: 160vh;
+  }
   .Fotos {
     display: none;
   }
@@ -401,8 +439,10 @@ body {
     border-radius: 8px;
     width: 100%;
   }
-  .BarraAbajo {
-    flex-direction: column-reverse;
+  .BarraAbajo ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
     height: 26vh;
   }
   .Contenedor2 {
@@ -411,15 +451,30 @@ body {
   .Redes {
     width: 75%;
   }
+  .Info2 div {
+    height: 110vh;
+  }
 }
 @media screen and (max-width: 740px) {
   .Fotos3 {
     height: 1400px;
   }
 }
-@media screen and (max-width: 550px) {
-  .BarraAbajo {
-    font-size: 1rem;
+@media screen and (max-width: 1000px) {
+  .Info div {
+    height: 90vh;
+  }
+  .BarraAbajo ul {
+    height: 20vh;
+    padding: auto;
+  }
+}
+@media screen and (max-width: 580px) {
+  .Info2 div {
+    height: 160vh;
+  }
+  main {
+    height: 210vh;
   }
 }
 
