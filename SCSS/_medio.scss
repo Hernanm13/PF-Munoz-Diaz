@@ -9,12 +9,12 @@
         background-color: $cFondoDos;
         border-radius: 8px;
         width: 90%;
-        height: 300px;
-        margin: 40px;
+        height: 60vh;
+        margin: auto;
+        padding: 6vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 30px;
     }
     h2{
         font-weight: 600;
@@ -25,11 +25,10 @@
 .Titulos{
     background-color: $cFondoDos;
     border-radius: 8px;
-    width:90%;
-    height: 4vh;
-    margin-top: 40px;
-    margin-left: 30px;
-    padding: 30px;
+    width:220vh;
+    height: 15vh;
+    margin: auto;
+    margin-top: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;

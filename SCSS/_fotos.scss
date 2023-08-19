@@ -1,7 +1,6 @@
 .Fotos{
     grid-area: Cartas;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: auto;
     height: 500px;
 }
 
@@ -9,7 +8,7 @@
 .Contenedor {
     width: 100%;
     max-width: 1200px;
-    height: 430px;
+    height: 76vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -55,7 +54,7 @@
 .Contenedor2{
     width: 100%;
     max-width: 1200px;
-    height: 430px;
+    height: 76vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -101,7 +100,7 @@
 .Contenedor3 {
     width: 100%;
     max-width: 1200px;
-    height: 430px;
+    height: 76vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
