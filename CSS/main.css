@@ -514,10 +514,16 @@ main {
   .Body main {
     height: 210vh;
   }
+  .Formulario {
+    width: 90%;
+  }
 }
-@media sceen and (max-width: 450px) {
+@media screen and (max-width: 450px) {
   .Info2 div {
-    height: 800vh;
+    height: 250vh;
+  }
+  .MainNos {
+    height: 280vh;
   }
 }
 

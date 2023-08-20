@@ -138,11 +138,16 @@
         .Body main{
             height: 210vh;
         }
-    }
-    @media sceen and (max-width:$media450){
-        .Info2 div{
-            height: 800vh;
+        .Formulario{
+            width: 90%;
         }
     }
-    
+    @media screen and (max-width: $media450){
+        .Info2 div{
+            height:250vh;
+        }
+        .MainNos{
+            height: 280vh;
+        }
+    }
     
