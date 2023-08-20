@@ -13,13 +13,15 @@
     .BodyP main{
         height: 400vh;
     } 
-    
+    .Info2 div{
+        height: 100vh;
+        margin-bottom: 50vh;
+    }
     .Barra { 
         flex-direction: column-reverse;
         height: 26vh;
         width: 85%;
     }
-
     .Fotos{
         height: 185vh;
     }
@@ -96,32 +98,50 @@
         .Redes{
             width: 75%; 
         }
-        .Info2 div{
-            height: 110vh;
-            
-        }
     }
 
-    @media screen and (max-width:$mediaMobileDos){
-        
-    }
+    
     
     @media screen and (max-width:$media1000){
         .Info div{
             height: 90vh;
         }
+        .Info2 div{
+            height: 130vh;
+        }
+        .Redes{
+            padding: auto;
+        }
         .BarraAbajo ul{
             height: 20vh;
             padding: auto;
         }
+        .MainNos{
+            height: 165vh;
+        }
     }
-
-    @media screen and (max-width:$media580){
+    @media screen and (max-width:$mediaMobileDos){
         .Info2 div{
             height: 160vh;
         }
+        .MainNos{
+            height: 200vh;
+        }
+    }
+    @media screen and (max-width:$media580){
+        .Info2 div{
+            height: 200vh;
+        }
+        .MainNos{
+            height: 250vh;
+        }
         .Body main{
             height: 210vh;
+        }
+    }
+    @media sceen and (max-width:$media450){
+        .Info2 div{
+            height: 800vh;
         }
     }
     
